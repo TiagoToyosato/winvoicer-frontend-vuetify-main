@@ -1,0 +1,7 @@
+// See: https://github.com/vuetifyjs/vuetify/issues/16593
+@use 'vuetify/lib/styles/main.sass' with (
+  $utilities: false,
+  $color-pack: false,
+);
+
+@import './style.css';

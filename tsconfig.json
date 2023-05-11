@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+, "src/stores/alert.store.ts", "src/router/index.ts", "src/stores/accounts.store.ts"  ],
+  "references": [
+    {
+      "path": "tsconfig.node.json"
+    }
+  ]
+}

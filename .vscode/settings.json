@@ -1,0 +1,23 @@
+{
+  "files.autoSave": "afterDelay",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "prettier.bracketSameLine": true,
+  "prettier.printWidth": 160,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+}
