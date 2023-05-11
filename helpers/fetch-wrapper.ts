@@ -11,7 +11,7 @@ export const fetchWrapper = {
 
 function request(method: Method) {
   return (url: string, body?: Record<string, unknown>): Promise<unknown> => {
-    console.log(method)
+
     // const requestOptions: RequestInit = {
     //   method,
     //   headers: authHeader(url),
