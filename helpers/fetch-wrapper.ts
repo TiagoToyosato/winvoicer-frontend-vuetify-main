@@ -17,6 +17,7 @@ function request(method: Method) {
     //   headers: authHeader(url),
     // };
     const headers: any = authHeader(url);
+    console.log(headers)
     // if (body) {
     //   headers.append("Content-Type", "application/json");
     // }
