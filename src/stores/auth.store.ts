@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { fetchWrapper } from "../../helpers";
+import { fetchWrapper } from "../helpers";
 import { router } from "../router";
 import { useAlertStore } from "../stores";
 

@@ -3,9 +3,9 @@ export default {
   data: () => ({
     open: ["Users"],
     cruds: [
-      ["Create", "mdi-plus-outline", "/add_user"],
+      ["Create", "mdi-plus-outline", "/register_user"],
       ["Read", "mdi-file-outline", "/read_user"],
-      ["Update", "mdi-update", "/update_user"],
+      ["Update", "mdi-update", "/edit_user"],
       ["Delete", "mdi-delete", "/delete_user"],
       ["All Accounts", "mdi-account", "/all_accounts"],
     ]

@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { fetchWrapper } from "../..//helpers";
+import { fetchWrapper } from "../helpers";
 import { useAuthStore } from "../stores";
 
 const baseUrl = `${import.meta.env.VITE_API_URL}/users`;
@@ -11,8 +11,8 @@ export interface User {
   name: string;
 }
 
-export interface ApiResponse<T> {
-  data: T;
+export interface ApiResponse {
+  data: any;
   error?: string;
 }
 
@@ -45,7 +45,8 @@ export const useUsersStore = defineStore({
     async getAll() {
       this.user = { loading: true };
       try {
-        const response: any = await fetchWrapper.get(`${baseUrl}`);
+        const response: ApiResponse = await fetchWrapper.get(`${baseUrl}`) as ApiResponse;
+        console.log(response)
         if (response.error) {
           this.user = { error: response.error };
         } else {

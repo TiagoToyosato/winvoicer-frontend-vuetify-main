@@ -1,38 +1,28 @@
 <script lang="ts">
-import { fetchWrapper } from "../../../helpers";
+import ListAccounts from "../../components/accounts/ListAccounts.vue";
+import AccountsActions from "../../components/accounts/AccountsActions.vue";
 
-const baseUrl = `${import.meta.env.VITE_API_URL}`;
-
-export default {
+export default ({
+  name: "AccountsView",
+  components: { ListAccounts, AccountsActions },
   data() {
     return {
-      users: []
-    }
-  },
-  mounted() {
-    this.getAccounts()
-  },
-  methods: {
-    async getAccounts() {
-      const req: any = await await fetchWrapper.get(`${baseUrl}/account`);
-      console.log(req)
-      const data = await req.json();
-      console.log(data)
-      this.users = data;
-      console.log(this.users)
-    }
+      message: "Login"
+    };
   }
-}
+})
 </script>
 
 <template>
   <div class="accounts">
     <h1>Users</h1>
+    <ListAccounts />
+    <AccountsActions />
   </div>
 </template>
 
 <style scoped>
   .accounts {
     padding: 2em;
-  }
+   }
 </style>
